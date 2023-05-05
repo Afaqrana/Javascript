@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Switch statement example</title>
+  </head>
+  <body>
+    <label for="fruit">Select a fruit:</label>
+    <select id="fruit">
+      <option value="Oranges">Oranges</option>
+      <option value="Mangoes">Mangoes</option>
+      <option value="Papayas">Papayas</option>
+      <option value="Apples">Apples</option>
+      <option value="Bananas">Bananas</option>
+    </select>
+    <button onclick="showPrice()">Show Price</button>
+    <p id="output"></p>
+    <script>
+        function showPrice() {
+          const expr = document.getElementById("fruit").value;
+      
+          switch (expr) {
+            case 'Oranges':
+              document.getElementById("output").innerHTML = 'Oranges are $0.59 a pound.';
+              break;
+            case 'Mangoes':
+            case 'Papayas':
+              document.getElementById("output").innerHTML = 'Mangoes and papayas are $2.79 a pound.';
+              break;
+            default:
+              document.getElementById("output").innerHTML = `Sorry, we are out of ${expr}.`;
+          }
+        }
+      </script>
+      </body>
+</html>

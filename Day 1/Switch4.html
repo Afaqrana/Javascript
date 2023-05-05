@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick</title>
+</head>
+<body>
+    <label for="fruit">Select a fruit</label>
+    <select name="" id="fruit">
+        <option value="oranges">Oranges</option>
+        <option value="mangoes">Mangoes</option>
+        <option value="papayas">Papayas</option>
+        <option value="apple">Apple</option>
+        <option value="bananas">Bananas</option>
+    </select>
+    <button onclick="showPrice()">Show Price</button>
+    <p id="output"></p>
+    <script>
+        function showPrice(){
+            const expr = document.getElementById('fruit').value
+        }
+    </script>
+</body>
+</html>
